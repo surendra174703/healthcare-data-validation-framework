@@ -1,0 +1,10 @@
+{
+  "columns": {
+    "bmi": {
+      "not_null": true
+    },
+    "id": {
+      "unique": true
+    }
+  }
+}
