@@ -17,8 +17,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Debug files
+        run: |
+          pwd
+          ls -R
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Run transformation
+        run: python src/transformation/transform_data.py
 
       - name: Run tests
         run: pytest
